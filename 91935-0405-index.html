@@ -29,9 +29,9 @@ html, body, h1, h2, h3, h4, h5, h6 {font-family: "Kanit", sans-serif}
         <div id="cbmmembername" class="w3-center w3-large w3-text-blue">คุณ </div>
         <div class="w3-center w3-large">กรุณาพิมพ์คำถามด้านล่างครับ</div><br>
         <p id="cbmmsgbox" contenteditable="true" class="w3-border w3-padding-32 w3-text-grey w3-round w3-margin-bottom"style="width:70%; outline:none; word-wrap:break-word;margin:auto;"></p><br>
-        <button id="cbmbt01" class="w3-button w3-card w3-padding w3-round-large w3-large w3-white w3-hover-dark-grey w3-hover-text-white w3-margin-bottom" onclick="submit01()" style="display:block;outline:none;margin:auto;"> Submit-1 >> </button>
-        <button id="cbmbt02" class="w3-button w3-card w3-padding w3-round-large w3-large w3-white w3-hover-dark-grey w3-hover-text-white w3-margin-bottom" onclick="shareMsg()" style="display:block;outline:none;margin:auto;"> Submit-2 >> </button>
-        <button id="cbmbt03" class="w3-button w3-card w3-padding w3-round-large w3-large w3-white w3-hover-dark-grey w3-hover-text-white w3-margin-bottom" onclick="submit03()" style="display:block;outline:none;margin:auto;"> Submit-3 >> </button>
+        <button id="cbmbt01" class="w3-button w3-card w3-padding w3-round-large w3-large w3-white w3-hover-dark-grey w3-hover-text-white w3-margin-bottom" onclick="submit01()" style="display:none;outline:none;margin:auto;"> Submit-1 >> </button>
+        <button id="cbmbt02" class="w3-button w3-card w3-padding w3-round-large w3-large w3-white w3-hover-dark-grey w3-hover-text-white w3-margin-bottom" onclick="submit02()" style="display:none;outline:none;margin:auto;"> Submit-2 >> </button>
+        <button id="cbmbt03" class="w3-button w3-card w3-padding w3-round-large w3-large w3-white w3-hover-dark-grey w3-hover-text-white w3-margin-bottom" onclick="submit03()" style="display:none;outline:none;margin:auto;"> Submit-3 >> </button>
         <br>
       </div>
     </div>  
@@ -56,7 +56,7 @@ function submit01()
       {
         document.getElementById("cbmmembermenu").style.display = "none";
         document.getElementById("cbmspinerload").style.display = "block";
-        var appscripturl = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; //edit
+        var appscripturl = "https://script.google.com/macros/s/AKfycbz2zIArGy5Gwzuud1quynIuohNePa7swVqbIOIG1Lt-sUJ68pA/exec"; //edit
         preparesubmitdata(appscripturl,cbmmsgboxVal);
       }
     else
